@@ -46,9 +46,9 @@ So each project below is written as **problem → what was manual → the fix �
 - **Impact:** an exchange you control, works in public with no app installed, and socials are never scrapeable from the page.
 
 **[ojph-cleaner](https://github.com/anki-boi/ojph-cleaner)** · Chrome MV3
-- **Problem:** job listings arrive unfiltered — salary buried in the description body, keyword hits that don't mean what you searched for.
-- **Fix:** a rules engine that deep-scans full descriptions against your own salary and keyword rules.
-- **Impact:** days of scrolling collapse into a shortlist.
+- **Problem:** job listings arrive unfiltered — salary is free text (`5.5$/hr`, `Php 1000/day`, `15-20 AUD per hour`, `TBD`) and therefore not comparable, staleness is invisible until you're pages deep (measured: a 297-job search ran 40–46 days old), and the first attempt at keyword filtering silently disabled itself because `AI` as a substring matched every listing.
+- **Fix:** three outcomes instead of two — negative keywords hide, positive keywords highlight, and a hated keyword on an otherwise good job shows in yellow to reconsider. Exact word/phrase matching, a recency window, live ECB-rate salary normalisation, and perpetual pagination. It refuses to guess: a part-time hourly rate that doesn't state its hours keeps its hourly figure rather than inventing a month.
+- **Impact:** screening effort stops scaling with market volume; eight *Next* clicks become one continuous scroll; every mark on the page names its reason.
 
 **[Anki-MCQ-Importer-AI-Batch-Generator](https://github.com/anki-boi/Anki-MCQ-Importer-AI-Batch-Generator)**
 - **Problem:** every exam block arrived as hundreds of lecture-slide images, each needing a hand-written question with plausible distractors.
