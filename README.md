@@ -20,16 +20,16 @@ So each project below is written as **problem → what was manual → the fix �
 
 | | |
 |---|---|
-| **Clinical operations** | Zoho CRM · EHR/EMR workflows · HIPAA · ADR reporting · GxP/cGMP · ICD coding |
+| **Clinical operations** | Zoho CRM · medical terminology · HIPAA · ADR reporting · GxP/cGMP · pharmacy-portal coordination |
 | **Automation** | Tampermonkey userscripts · Chrome extensions (MV3) · Chrome DevTools Protocol · Google Apps Script · n8n · Excel VBA |
-| **Data & code** | Python · JavaScript · SQL · Google Sheets · dashboards & KPI reporting |
+| **Data & code** | Python · JavaScript · Google Sheets · dashboards & KPI reporting |
 | **AI** | LLM prompt engineering · API integration · batch pipeline design · local inference |
 
 ---
 
 ### Selected work
 
-**[userscript-showcase](https://github.com/anki-boi/userscript-showcase)** · 40 production userscripts
+**[userscript-showcase](https://github.com/anki-boi/userscript-showcase)** · 45+ scripts & extensions in production (40 published)
 - **Problem:** one prescription meant re-typing the same patient data into whichever pharmacy portal the order needed, finding its tracking number by hand, then writing the patient SMS from scratch — 15–20 manual actions per order.
 - **Fix:** 40 scripts that each do one job. Deliberately *not* one extension: these portals change their DOM constantly, so isolation is what keeps a one-file selector fix from breaking patient messaging.
 - **Impact:** ~6 min → ~40 s per order, roughly **40–60 h/month** returned; wrong-patient and wrong-vial classes designed out.
